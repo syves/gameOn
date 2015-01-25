@@ -1,0 +1,18 @@
+== README
+
+GameOn.
+
+mvp:
+-A user can login with a secure password
+-A user can create an account
+- A user can add a board game.
+-A board game has characteristics which are booleans. ex: Has_bluffing; true.
+-A user can save their board game preferences.
+-All users can see other user's preferences.
+-A user can get a list of suggested games, based on their preferences
+-A user can see all the games in the system
+
+Stretch:
+-User can see their preferences and edit them
+-A user can search for suggestions based on all the users attending a gaming event
+-A search result can be saved?

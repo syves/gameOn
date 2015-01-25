@@ -1,0 +1,64 @@
+<h1>Add a game</h1>
+
+<!--name, error if game already exits-->
+<%= form_for :game do |f| %>
+<p>
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+</p>
+<h3>Characteristics:</h3>
+<p>
+  <%= f.label :player_interaction %><br>
+  <%= f.text_field :player_interaction, :placeholder => 'Enter true or false'%>
+  <!--change to yes or no or use drop down select dot?-->
+</p>
+<p>
+  <%= f.label :bluffing %><br>
+  <%= f.text_field :bluffing%>
+</p>
+<p>
+  <%= f.label :quick_setup %><br>
+  <%= f.text_field :quick_setup%>
+</p>
+<p>
+  <%= f.label :secret_info %><br>
+  <%= f.text_field :secret_info%>
+</p>
+<p>
+  <%= f.label :chance %><br>
+  <%= f.text_field :chance%>
+</p>
+<p>
+  <%= f.label :card_based %><br>
+  <%= f.text_field :card_based %>
+</p>
+<p>
+  <%= f.label :two_player %><br>
+  <%= f.text_field :two_player %>
+</p>
+<p>
+  <%= f.label :theme %><br>
+  <%= f.text_field :theme %>
+</p>
+<p>
+  <%= f.label :heavy_reading %><br>
+  <%= f.text_field :heavy_reading %>
+</p>
+<p>
+  <%= f.label :kid_friendly %><br>
+  <%= f.text_field :kid_friendly %>
+</p>
+<p>
+  <%= f.label :requires_performance %><br>
+  <%= f.text_field :requires_performance %>
+</p>
+<p>
+  <%= f.label :randomness_starting_state %><br>
+  <%= f.text_field :randomness_starting_state %>
+</p>
+<p>
+  <%= f.label :asymmetric %><br>
+  <%= f.text_field :asymmetric %>
+</p>
+<%= f.submit %>
+<% end %>
